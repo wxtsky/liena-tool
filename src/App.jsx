@@ -130,24 +130,24 @@ function App() {
         <Row justify="center" style={{marginTop: 24}}>
             <Col xs={24} sm={24} md={24} lg={24} xl={24}>
                 <Card>
-                    <Title level={3}>查询Linea地址信息</Title>
+                    <Title level={3}>Linea数据查询</Title>
                     <Input.TextArea
                         value={addresses}
                         onChange={e => setAddresses(e.target.value)}
-                        placeholder="请输入以太坊地址,每行一个"
+                        placeholder="输入Linea地址,每行一个"
                         autoSize={{minRows: 5, maxRows: 10}}
                         style={{marginBottom: 16}}
                     />
                     <Row justify="space-between" align="middle">
                         <Col>
-                            <Button type="primary" onClick={handleClick} loading={loading}>
+                            <Button type="primary" onClick={handleClick} loading={loading} size={"large"}>
                                 查询
                             </Button>
                             <Text strong={true} style={{marginLeft: 5}}>
                                 By <a href="https://x.com/beibeieth" target="_blank" rel="noreferrer">北北</a>
                             </Text>
                             <Text strong={true} style={{marginLeft: 5}}>
-                                数据从本地查询 爱用不用 没逼着你用
+                                数据从本地查询,不会上传到服务器
                             </Text>
                         </Col>
                         {tableData.length > 0 && (
