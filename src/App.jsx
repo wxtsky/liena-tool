@@ -144,7 +144,7 @@ function App() {
                                 查询
                             </Button>
                             <Text strong={true} style={{marginLeft: 5}}>
-                                By <a href="https://x.com/beibeieth" target="_blank" rel="noreferrer">北北</a>
+                                By <a href="https://x.com/beibeinbnb" target="_blank" rel="noreferrer">北北</a>
                             </Text>
                             <Text strong={true} style={{marginLeft: 5}}>
                                 数据从本地查询,不会上传到服务器
