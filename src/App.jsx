@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import axios from 'axios';
 import { Input, Button, Table, message, Tag, Space, Typography, Row, Col, Card } from 'antd';
 import { ethers } from "ethers";
+import { GithubOutlined } from '@ant-design/icons';
 
 // 添加X图标组件
 const XIcon = () => (
@@ -208,6 +209,14 @@ function App() {
                                     style={{ ...styles.actionButton, background: '#000000', borderColor: '#000000' }}
                                 >
                                     关注我
+                                </Button>
+                                <Button
+                                    icon={<GithubOutlined />}
+                                    href="https://github.com/wxtsky/linea-tool"
+                                    target="_blank"
+                                    style={{ ...styles.actionButton }}
+                                >
+                                    开源代码
                                 </Button>
                             </Space>
                         </Col>
